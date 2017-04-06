@@ -1,0 +1,14 @@
+We adopt remote control to modify the configurations of clients. The format is like this:
+	sh updateConfigs [option] [configs]
+		-d : server ip
+		-p : server port
+		-e : epoch
+		-r : request rate
+		-c : connections
+		-k : kill the client program
+		-s : start SID
+		-t : end SID
+		-b : burst
+		-u : unit delay
+For example, if we would like to modify the start SID to 1 and the end SID to 1000, we can use the following command:
+	sh updateConfigs -s 1 -t 1000
